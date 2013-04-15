@@ -1,0 +1,11 @@
+<?php echo form_open(current_url());?>
+    <label for="utilisateur">Nom d'utilisateur : </label>
+    <input type="text" name="utilisateur" value="<?php echo set_value('utilisateur'); ?>" />
+    <?php echo form_error('utilisateur'); ?>
+
+    <label for="mdp">Mot de passe :</label>
+    <input type="password" name="mdp" value="" />
+    <?php echo form_error('mdp'); ?>
+ 
+    <input type="submit" value="Envoyer" />
+</form>

@@ -1,0 +1,20 @@
+<h2>Test</h2>
+<ul>
+<?php
+foreach($news as $news_i):?>
+
+<li><?=$news_i->titre?> (Publié le <?=$news_i->date?>)
+<p><?=$news_i->contenu?> <a href="<?=site_url('news/modifier/'.$news_i->id)?>">Modifier la news</a><br />
+<a href="javascript:alert('test')">Supprimer news</a>
+<br /><br /></p></li>
+
+<?php endforeach;?>
+</ul>
+
+<?php
+/* End of file news_view.php */
+/* Location: ./application/views/news_view.php */
+?>
+
+<!! Ajouter code js : un peu d'ajax pour envoyer une post à la page suppresion.
+			code : confirm('blabala') qui return true ou false!>

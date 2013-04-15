@@ -1,0 +1,18 @@
+<h3>Ajout de news</h3>
+
+<?php echo form_open('news/admin');?>
+<p>
+    <label for="titre_ajout">Titre :</label>
+    <input type="text" name="titre_ajout" id="titre_ajout" value="<?php echo set_value('titre_ajout'); ?>" />
+    <?php echo form_error('titre_ajout'); ?>
+	
+	<br />
+
+    <label for="contenu_ajout">Contenu :</label>
+    <textarea name="contenu_ajout" id="contenu_ajout" value="<?php echo set_value('contenu_ajout'); ?>" ></textarea>
+    <?php echo form_error('contenu_ajout'); ?>
+ 
+	<input type="hidden" name="action" value="ajout" />
+    <input type="submit" value="Envoyer" />
+</p>
+</form>

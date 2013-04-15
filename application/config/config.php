@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/tueurs-chaptal/';
+$config['base_url']	= 'http://localhost/Site_tutorat/';
 
 /*
 |--------------------------------------------------------------------------
